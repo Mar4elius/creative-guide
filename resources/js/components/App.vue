@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Basic template</h1>
+        <h1 class="text-red-700">Basic template</h1>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
             expedita? Officiis autem, omnis hic similique facere tempora culpa
