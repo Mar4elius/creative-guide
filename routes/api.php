@@ -1,7 +1,9 @@
 <?php
-
+// Support
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+// Controllers
+use App\Http\Controllers\Api\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +18,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::prefix('v1')->group(function () {
+    Route::prefix('users')->group(function () {
+        Route::get('/all', [UserController::class, 'all']);
+    });
+    Route::resource('users', UserController::class);
 });

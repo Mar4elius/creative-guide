@@ -6,5 +6,7 @@ const usersApi = {
      *
      * @return JSON
      */
-    get: () => axios.get("/users"),
+    get: () => axios.get("/api/v1/users/all"),
 };
+
+export default usersApi;
