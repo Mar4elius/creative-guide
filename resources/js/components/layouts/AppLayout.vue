@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto min-h-screen relative">
+    <div class="min-h-screen relative">
         <header>
             <slot name="header">
                 <page-header />
