@@ -18,7 +18,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-gradient-to-b from-custom-blue to-custom-brown">
         <div id="app">
             @yield('content')
         </div>
