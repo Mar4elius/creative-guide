@@ -13,6 +13,7 @@
 <script>
 // Vue
 import { onMounted } from "@vue/runtime-core";
+import { useStore } from "vuex";
 // Components
 import AppLayout from "../layouts/AppLayout";
 import PhotographerTile from "../blocks/PhotographerTile";
@@ -24,7 +25,10 @@ export default {
     },
 
     setup() {
-        onMounted(() => {});
+        const store = useStore();
+        onMounted(async () => {
+            const response = await store.dispatch("users/get");
+        });
     },
 };
 </script>
