@@ -1,5 +1,7 @@
 require("./bootstrap");
 
 import { createApp } from "vue";
-import App from "./components/App.vue";
-createApp(App).mount("#app");
+// declare global vue components
+import IndexPage from "./components/views/IndexPage";
+// \\ declare global vue components
+createApp({}).component("index-page", IndexPage).mount("#app");
