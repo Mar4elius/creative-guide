@@ -16,9 +16,11 @@ class UserController extends Controller
      */
     public function all()
     {
-        dd('stop');
         $users = User::all();
-        dd($users);
+
+        return response()->json([
+            'users' => $users
+        ]);
     }
 
     /**
