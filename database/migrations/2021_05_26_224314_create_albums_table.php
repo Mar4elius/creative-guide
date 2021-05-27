@@ -21,6 +21,7 @@ class CreateAlbumsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->text('image');
+            $table->date('date');
             $table->boolean('is_featured')
                 ->default(false);
             $table->timestamps();
