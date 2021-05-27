@@ -2,9 +2,11 @@
     <app-layout>
         <template v-slot:main>
             <div class="px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto max-h-full">
-                <h1>Looking for a Photographer?</h1>
-                <h3>Check who is available!</h3>
-                <photographer-tile />
+                <h1 class="text-white">Looking for a Photographer?</h1>
+                <h3 class="text-white">Check who is available!</h3>
+                <div v-for="user in data.users" :key="user.id" class="mt-4">
+                    <photographer-tile :user="user" />
+                </div>
             </div>
         </template>
     </app-layout>
@@ -12,7 +14,7 @@
 
 <script>
 // Vue
-import { onMounted } from "@vue/runtime-core";
+import { onMounted, reactive } from "@vue/runtime-core";
 import { useStore } from "vuex";
 // Components
 import AppLayout from "../layouts/AppLayout";
@@ -26,9 +28,16 @@ export default {
 
     setup() {
         const store = useStore();
+        let data = reactive({ users: null });
+
         onMounted(async () => {
             const response = await store.dispatch("users/get");
+            data.users = { ...response.data.users };
         });
+
+        return {
+            data,
+        };
     },
 };
 </script>
