@@ -5,7 +5,7 @@
                 <h1 class="text-white">Looking for a Photographer?</h1>
                 <h3 class="text-white">Check who is available!</h3>
                 <div v-for="user in data.users" :key="user.id" class="mt-4">
-                    <photographer-tile :user="user" />
+                    <photographer-tile :user="user" :show-button="true" />
                 </div>
             </div>
         </template>
