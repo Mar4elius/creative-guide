@@ -36,6 +36,8 @@
                                 clip-rule="evenodd"
                             />
                         </svg>
+                        <!-- so album tiles are the same size -->
+                        <div v-else class="h-8 w-8" />
                     </div>
                     <div>
                         <p class="text-gray-400">
