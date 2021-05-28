@@ -7,20 +7,22 @@
 
             <div class="w-4/5">
                 <div class="w-full">
-                    <h3 class="text-black text-md">
+                    <h3 class="text-black">
                         {{ user.first_name + " " + user.last_name }}
                     </h3>
                 </div>
                 <div class="flex flex-col md:flex-row">
                     <div class="w-full md:w-2/3 md:mr-5">
-                        <h6 class="text-gray-400">Bio</h6>
-                        <p class="text-black">{{ user.bio }}</p>
+                        <h6 class="text-gray-400 text-sm">Bio</h6>
+                        <p class="text-sm text-gray-400">
+                            {{ user.bio }}
+                        </p>
                     </div>
                     <div class="w-full md:w-1/3">
-                        <h6 class="text-gray-400">Phone</h6>
-                        <p class="text-pink-400">{{ user.phone }}</p>
-                        <h6 class="text-gray-400">Email</h6>
-                        <p class="text-pink-400">{{ user.email }}</p>
+                        <h6 class="text-gray-400 text-sm">Phone</h6>
+                        <p class="text-pink-400 text-sm">{{ user.phone }}</p>
+                        <h6 class="text-gray-400 text-sm">Email</h6>
+                        <p class="text-pink-400 text-sm">{{ user.email }}</p>
                     </div>
                 </div>
             </div>
