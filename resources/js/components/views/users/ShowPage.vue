@@ -1,7 +1,7 @@
 <template>
     <app-layout>
         <template v-slot:main>
-            <div class="px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto max-h-full">
+            <div class="px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div class="mt-8">
                     <photographer-tile :user="user" />
                 </div>

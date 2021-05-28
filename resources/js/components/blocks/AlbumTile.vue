@@ -18,7 +18,7 @@
                 </h6>
             </div>
             <div class="p-2 md:p-4 lg:p-6">
-                <p class="text-black">
+                <p class="text-black text-sm">
                     {{ album.description }}
                 </p>
                 <div class="flex justify-between mt-2">

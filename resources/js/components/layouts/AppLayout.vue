@@ -1,16 +1,16 @@
 <template>
-    <div class="min-h-screen relative">
+    <div class="min-h-screen relative flex flex-col h-full">
         <header>
             <slot name="header">
                 <page-header />
             </slot>
         </header>
 
-        <main>
+        <main class="flex-auto">
             <slot name="main"></slot>
         </main>
 
-        <footer>
+        <footer class="flex-grow-0 flex-shrink">
             <slot name="footer">
                 <page-footer />
             </slot>

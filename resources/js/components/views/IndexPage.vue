@@ -1,7 +1,7 @@
 <template>
     <app-layout>
         <template v-slot:main>
-            <div class="px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto max-h-full">
+            <div class="px-2 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <h1 class="text-white">Looking for a Photographer?</h1>
                 <h3 class="text-white">Check who is available!</h3>
                 <div v-for="user in data.users" :key="user.id" class="mt-4">
