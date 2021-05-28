@@ -7,16 +7,12 @@
                 </div>
 
                 <div
-                    class="grid grid-cols-3 gap-5 py-5"
+                    class="grid grid-cols-3"
                     v-if="data.user && data.user.albums"
                 >
-                    <div
-                        v-for="album in data.user.albums"
-                        :key="album.id"
-                        class="rounded-lg bg-white"
-                    >
+                    <template v-for="album in data.user.albums" :key="album.id">
                         <album-tile :album="album" />
-                    </div>
+                    </template>
                 </div>
             </div>
         </template>
