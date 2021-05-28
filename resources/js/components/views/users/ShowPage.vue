@@ -8,11 +8,19 @@
 
                 <div
                     class="grid grid-cols-3"
-                    v-if="data.user && data.user.albums"
+                    v-if="
+                        data.user && data.user.albums && data.user.albums.length
+                    "
                 >
                     <template v-for="album in data.user.albums" :key="album.id">
                         <album-tile :album="album" />
                     </template>
+                </div>
+                <div v-else class="w-full flex justify-center items-center">
+                    <h5>
+                        This photographer does not have any images yet. Give
+                        him/her some time!
+                    </h5>
                 </div>
             </div>
         </template>

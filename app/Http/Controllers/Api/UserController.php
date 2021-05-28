@@ -52,8 +52,9 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $data = $user->with('albums')
+        $data = User::whereId($user->id)->with('albums')
             ->first();
+
         return response()->json([
             'user' => $data
         ]);
