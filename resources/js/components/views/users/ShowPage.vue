@@ -7,7 +7,7 @@
                 </div>
 
                 <div
-                    class="grid grid-cols-3"
+                    class="grid grid-cols-1 md:grid-cols-3"
                     v-if="
                         data.user && data.user.albums && data.user.albums.length
                     "

@@ -11,8 +11,8 @@
                     rerum fugit expedita et.
                 </p>
             </div>
-            <div class="mt-4 md:w-1/2 md:mt-0 text-white">
-                <ul>
+            <div class="w-full mt-4 md:w-1/2 md:mt-0 text-white">
+                <ul class="md:float-right">
                     <li class="mb-2">
                         <div class="flex">
                             <svg
