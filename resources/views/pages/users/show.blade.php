@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <show-user-page></show-user-page>
+    <show-user-page :user="{{$user}}"></show-user-page>
 @endsection
