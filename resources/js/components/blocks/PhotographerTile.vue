@@ -43,7 +43,7 @@
                     mr-1
                     mb-1
                 "
-                :href="`/api/v1/users/${user.id}`"
+                :href="`/users/${user.id}`"
                 >Show Gallery</a
             >
         </div>

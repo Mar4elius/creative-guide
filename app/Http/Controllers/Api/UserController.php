@@ -47,12 +47,16 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  App\Models\User $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
     {
-        //
+        $data = $user->with('albums')
+            ->first();
+        return response()->json([
+            'user' => $data
+        ]);
     }
 
     /**

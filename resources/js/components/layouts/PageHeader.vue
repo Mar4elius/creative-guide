@@ -2,7 +2,7 @@
     <div class="w-full bg-white">
         <div class="flex justify-between">
             <div class="py-2 px-2 sm:px-6 lg:px-8 sm:py-4">
-                <a href="#">
+                <a href="/">
                     <div class="flex flex-col sm:flex-row items-center">
                         <img
                             alt="company-logo"
