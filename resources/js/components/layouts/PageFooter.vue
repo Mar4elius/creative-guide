@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-6">
         <hr />
         <h3 class="text-white">Let's talk</h3>
         <div class="flex flex-col md:flex-row">

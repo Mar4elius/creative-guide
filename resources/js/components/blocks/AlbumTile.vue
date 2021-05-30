@@ -8,7 +8,8 @@
                 transition
                 duration-200
                 hover:scale-105
-                m-3
+                mx-3
+                mt-6
             "
         >
             <div class="relative">
